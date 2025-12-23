@@ -140,5 +140,6 @@ object GenericDataTypes {
         val candyUsed: Int,
     ) {
         val apiId = "pet:$id:${rarity.name}"
+        val skinStack = skin?.let { SkyBlockId.item("pet_skin_$it") }
     }
 }

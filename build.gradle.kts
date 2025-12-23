@@ -126,6 +126,8 @@ compactingResources {
 
     removeComments("skyblockid/unobtainable_ids")
     substituteFromDifferentFile("slayer", "slayers")
+    compactToObject("pets/overwrites")
+    compactToObject("pets")
 }
 
 tasks.withType<JavaCompile>().configureEach {
